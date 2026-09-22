@@ -52,10 +52,11 @@ body {
 }
 
 .header-mascot {
-  width: 64px;
-  height: 64px;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
   display: block;
-  margin: 0 auto 8px;
+  margin: 0 auto 4px;
 }
 
 .app-header h1 {
