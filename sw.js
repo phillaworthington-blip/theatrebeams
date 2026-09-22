@@ -1,4 +1,4 @@
-const CACHE_NAME = "theatrebeams-v3";
+const CACHE_NAME = "theatrebeams-v4";
 const ASSETS = [
   "./",
   "./index.html",
@@ -10,7 +10,7 @@ const ASSETS = [
   "./js/diagrams.js",
   "./js/pro.js",
   "./manifest.json",
-  "./icons/icon.svg",
+  "./icons/bulldog.svg",
 ];
 
 self.addEventListener("install", (event) => {

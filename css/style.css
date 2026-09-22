@@ -3,7 +3,7 @@
   --card-bg: #ffffff;
   --text: #1c1e21;
   --muted: #5a5f66;
-  --accent: #8b2e2e;
+  --accent: #00356b;
   --accent-contrast: #ffffff;
   --border: #d9dce1;
   --error: #b3261e;
@@ -16,8 +16,8 @@
     --card-bg: #212327;
     --text: #f0f1f3;
     --muted: #a9adb4;
-    --accent: #d98282;
-    --accent-contrast: #1c1e21;
+    --accent: #6ea8e0;
+    --accent-contrast: #0b1622;
     --border: #35373c;
     --error: #ff8b82;
   }
@@ -28,8 +28,8 @@
   --card-bg: #212327;
   --text: #f0f1f3;
   --muted: #a9adb4;
-  --accent: #d98282;
-  --accent-contrast: #1c1e21;
+  --accent: #6ea8e0;
+  --accent-contrast: #0b1622;
   --border: #35373c;
   --error: #ff8b82;
 }
@@ -49,6 +49,13 @@ body {
 .app-header {
   padding: 24px 16px 12px;
   text-align: center;
+}
+
+.header-mascot {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto 8px;
 }
 
 .app-header h1 {

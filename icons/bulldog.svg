@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- ears -->
+  <path d="M46,70 C20,80 14,120 34,148 C46,132 54,110 60,88 Z" fill="#00356B" />
+  <path d="M154,70 C180,80 186,120 166,148 C154,132 146,110 140,88 Z" fill="#00356B" />
+
+  <!-- head -->
+  <ellipse cx="100" cy="102" rx="66" ry="60" fill="#00356B" />
+
+  <!-- muzzle -->
+  <ellipse cx="100" cy="132" rx="46" ry="34" fill="#f4f5f7" />
+
+  <!-- forehead wrinkles -->
+  <path d="M70,68 Q100,58 130,68" fill="none" stroke="#00253f" stroke-width="4" stroke-linecap="round" />
+  <path d="M64,80 Q100,68 136,80" fill="none" stroke="#00253f" stroke-width="4" stroke-linecap="round" />
+
+  <!-- eyes -->
+  <circle cx="74" cy="92" r="9" fill="#1c1e21" />
+  <circle cx="126" cy="92" r="9" fill="#1c1e21" />
+  <circle cx="77" cy="89" r="2.5" fill="#f4f5f7" />
+  <circle cx="129" cy="89" r="2.5" fill="#f4f5f7" />
+
+  <!-- nose -->
+  <ellipse cx="100" cy="118" rx="14" ry="10" fill="#1c1e21" />
+  <ellipse cx="95" cy="116" rx="2.5" ry="3" fill="#4a4d52" />
+  <ellipse cx="105" cy="116" rx="2.5" ry="3" fill="#4a4d52" />
+
+  <!-- jowls / mouth -->
+  <path d="M100,128 L100,138" fill="none" stroke="#1c1e21" stroke-width="3" stroke-linecap="round" />
+  <path d="M100,138 Q78,142 68,158" fill="none" stroke="#1c1e21" stroke-width="3" stroke-linecap="round" />
+  <path d="M100,138 Q122,142 132,158" fill="none" stroke="#1c1e21" stroke-width="3" stroke-linecap="round" />
+
+  <!-- collar -->
+  <path d="M52,150 Q100,172 148,150 L148,160 Q100,182 52,160 Z" fill="#00356B" />
+  <circle cx="100" cy="168" r="6" fill="#f4c542" stroke="#00253f" stroke-width="1.5" />
+</svg>
