@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TheatreBeams</title>
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="app-header">
+  <h1>TheatreBeams</h1>
+  <p class="tagline">A quick deflection check for scenery and platform beams</p>
+</header>
+
+<main class="app-main">
+  <form id="beam-form" class="card">
+    <fieldset>
+      <legend>Material</legend>
+      <div id="material-field" class="material-field"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Loading condition</legend>
+      <label class="field">
+        <span>Case</span>
+        <select name="loadCase" id="load-case">
+          <option value="simple">Simple span, evenly distributed load (L/240)</option>
+          <option value="cantilever">Cantilever, evenly distributed load (L/360)</option>
+        </select>
+      </label>
+      <div id="case-diagram" class="case-diagram" aria-hidden="true"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Beam &amp; deck</legend>
+      <label class="field">
+        <span>Span (inches)</span>
+        <input type="number" name="span" id="span" min="1" step="any" required />
+      </label>
+      <label class="field">
+        <span>Floor load (psf)</span>
+        <input type="number" name="floorLoad" id="floor-load" min="1" step="any" value="50" required />
+      </label>
+      <label class="field">
+        <span>Beam spacing, on center (inches)</span>
+        <input type="number" name="spacing" id="spacing" min="1" step="any" value="24" required />
+      </label>
+    </fieldset>
+
+    <p id="form-error" class="form-error" role="alert" hidden></p>
+
+    <button type="submit">Solve</button>
+  </form>
+
+  <section id="results" class="card" hidden>
+    <h2>Result</h2>
+    <div id="results-body"></div>
+  </section>
+
+  <aside id="ad-slot" class="ad-slot">
+    <!-- Ad placeholder: swap for a real ad network snippet (e.g. Google AdSense) once an account is set up. Hidden automatically for Pro users. -->
+    <p>Ad space</p>
+  </aside>
+
+  <section class="card settings-card">
+    <h2>Pro</h2>
+    <p id="pro-status"></p>
+    <label class="field field--inline">
+      <input type="checkbox" id="pro-dev-toggle" />
+      <span>Simulate Pro unlock (development only — not a real purchase)</span>
+    </label>
+  </section>
+
+  <footer class="disclaimer">
+    <p>
+      <strong>For educational estimating only.</strong> TheatreBeams checks deflection against
+      simplified case formulas for evenly distributed loads. It does not check bending or shear
+      strength, and does not replace review by a qualified engineer for load-bearing or
+      life-safety applications.
+    </p>
+  </footer>
+</main>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

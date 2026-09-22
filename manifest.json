@@ -1,0 +1,16 @@
+{
+  "name": "TheatreBeams",
+  "short_name": "TheatreBeams",
+  "description": "Deflection estimating for scenery and platform beams",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f5f7",
+  "theme_color": "#8b2e2e",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
