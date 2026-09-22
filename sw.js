@@ -1,4 +1,4 @@
-const CACHE_NAME = "theatrebeams-v4";
+const CACHE_NAME = "theatrebeams-v5";
 const ASSETS = [
   "./",
   "./index.html",
@@ -14,7 +14,15 @@ const ASSETS = [
 ];
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)));
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) =>
+      Promise.all(
+        ASSETS.map((url) =>
+          fetch(url, { cache: "reload" }).then((response) => cache.put(url, response))
+        )
+      )
+    )
+  );
   self.skipWaiting();
 });
 
@@ -30,8 +38,10 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
+  const request = new Request(event.request, { cache: "reload" });
+
   event.respondWith(
-    fetch(event.request)
+    fetch(request)
       .then((response) => {
         const copy = response.clone();
         caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
