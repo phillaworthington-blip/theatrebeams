@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 474 220">
 
   <!-- happy dog -->
-  <g transform="translate(20,25) scale(0.8)">
+  <g transform="translate(20,25) scale(0.8) rotate(22.5,100,102)">
     <path d="M52,64 Q38,32 52,10 Q72,28 74,60 Z" fill="#00356B" />
     <path d="M148,64 Q162,32 148,10 Q128,28 126,60 Z" fill="#00356B" />
     <ellipse cx="100" cy="102" rx="66" ry="60" fill="#00356B" />
@@ -30,19 +30,16 @@
     <circle cx="100" cy="168" r="6" fill="#f4c542" stroke="#00253f" stroke-width="1.5" />
   </g>
 
-  <!-- I-beam cross-section -->
-  <g stroke="#2f4f6b" stroke-width="3" stroke-linejoin="round">
-    <rect x="200" y="40" width="90" height="20" rx="3" fill="#5c7a99" />
-    <rect x="233" y="60" width="24" height="100" fill="#5c7a99" />
-    <rect x="200" y="160" width="90" height="20" rx="3" fill="#5c7a99" />
-  </g>
-  <circle cx="215" cy="50" r="3" fill="#2f4f6b" />
-  <circle cx="275" cy="50" r="3" fill="#2f4f6b" />
-  <circle cx="215" cy="170" r="3" fill="#2f4f6b" />
-  <circle cx="275" cy="170" r="3" fill="#2f4f6b" />
+  <!-- I-beam cross-section, one filleted outline -->
+  <path
+    d="M192,56 L192,44 Q192,40 196,40 L278,40 Q282,40 282,44 L282,56 Q282,60 278,60
+       L253,60 Q249,60 249,64 L249,156 Q249,160 253,160 L278,160 Q282,160 282,164
+       L282,176 Q282,180 278,180 L196,180 Q192,180 192,176 L192,164 Q192,160 196,160
+       L221,160 Q225,160 225,156 L225,64 Q225,60 221,60 L196,60 Q192,60 192,56 Z"
+    fill="#5c7a99" stroke="#2f4f6b" stroke-width="3" stroke-linejoin="round" />
 
   <!-- sad dog -->
-  <g transform="translate(310,25) scale(0.8)">
+  <g transform="translate(294,25) scale(0.8) rotate(-22.5,100,102)">
     <path d="M46,70 C20,80 14,120 34,148 C46,132 54,110 60,88 Z" fill="#00356B" />
     <path d="M154,70 C180,80 186,120 166,148 C154,132 146,110 140,88 Z" fill="#00356B" />
     <ellipse cx="100" cy="102" rx="66" ry="60" fill="#00356B" />
