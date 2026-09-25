@@ -16,11 +16,13 @@ const caseSelect = document.getElementById("load-case");
 const caseDiagram = document.getElementById("case-diagram");
 const caseDiagramSimple = document.getElementById("case-diagram-simple");
 const caseDiagramCaption = document.getElementById("case-diagram-caption");
+const spanLabel = document.getElementById("span-label");
 
 function renderCaseDiagram() {
   caseDiagram.innerHTML = diagramFor(caseSelect.value);
   caseDiagramSimple.innerHTML = simplifiedDiagramFor(caseSelect.value);
   caseDiagramCaption.textContent = simplifiedCaptionFor(caseSelect.value);
+  spanLabel.textContent = LOAD_CASES[caseSelect.value].spanFieldLabel;
 }
 
 caseSelect.addEventListener("change", renderCaseDiagram);

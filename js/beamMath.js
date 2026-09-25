@@ -12,6 +12,7 @@ export const LOAD_CASES = {
   simple: {
     id: "simple",
     label: "Simple span, evenly distributed load",
+    spanFieldLabel: "Span (inches); how wide is your bridge?",
     deflectionRatio: 240,
     requiredInertia(pli, spanIn, E, deflectionIn) {
       return (5 * pli * spanIn ** 4) / (384 * E * deflectionIn);
@@ -20,6 +21,7 @@ export const LOAD_CASES = {
   cantilever: {
     id: "cantilever",
     label: "Cantilever, evenly distributed load",
+    spanFieldLabel: "Span: How long is your overhang?",
     deflectionRatio: 360,
     requiredInertia(pli, spanIn, E, deflectionIn) {
       return (pli * spanIn ** 4) / (8 * E * deflectionIn);
