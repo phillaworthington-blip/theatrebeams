@@ -107,3 +107,44 @@ export function cantileverDiagram() {
 export function diagramFor(caseId) {
   return caseId === "cantilever" ? cantileverDiagram() : simpleSpanDiagram();
 }
+
+// Plain-language illustrations paired with the technical diagrams above, so a
+// beginner has something concrete to anchor the abstraction to.
+
+export function bridgeDiagram() {
+  return `
+    <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A simple bridge deck resting on two piers">
+      <style>.bridge-label { fill: currentColor; font-size: 12px; font-family: system-ui, sans-serif; opacity: 0.75; }</style>
+      <rect x="20" y="88" width="260" height="22" fill="#bcd9ee" />
+      <rect x="30" y="70" width="34" height="50" rx="3" fill="#8a97a3" stroke="#5c6672" stroke-width="2" />
+      <rect x="236" y="70" width="34" height="50" rx="3" fill="#8a97a3" stroke="#5c6672" stroke-width="2" />
+      <rect x="22" y="58" width="256" height="14" rx="3" fill="#3a3f44" stroke="#202427" stroke-width="2" />
+      <line x1="34" y1="65" x2="266" y2="65" stroke="#e6c14a" stroke-width="2" stroke-dasharray="10 8" />
+      <line x1="22" y1="58" x2="22" y2="46" stroke="#3a3f44" stroke-width="3" />
+      <line x1="278" y1="58" x2="278" y2="46" stroke="#3a3f44" stroke-width="3" />
+      <line x1="22" y1="46" x2="278" y2="46" stroke="#3a3f44" stroke-width="3" />
+      <text x="150" y="122" text-anchor="middle" class="bridge-label">a road crossing a gap, held up at both ends</text>
+    </svg>
+  `;
+}
+
+export function divingBoardDiagram() {
+  return `
+    <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A diving board fixed to a platform at one end, free at the other">
+      <style>.bridge-label { fill: currentColor; font-size: 12px; font-family: system-ui, sans-serif; opacity: 0.75; }</style>
+      <rect x="20" y="80" width="260" height="30" fill="#bcd9ee" />
+      <path d="M20,80 q10,-6 20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 t20,0 V130 H20 Z" fill="#bcd9ee" opacity="0.6" />
+      <rect x="20" y="34" width="46" height="52" fill="#8a97a3" stroke="#5c6672" stroke-width="2" />
+      <rect x="60" y="50" width="200" height="10" rx="3" fill="#f4f5f7" stroke="#5c6672" stroke-width="2" />
+      <text x="150" y="122" text-anchor="middle" class="bridge-label">fixed at one end, hanging free over the water</text>
+    </svg>
+  `;
+}
+
+export function simplifiedDiagramFor(caseId) {
+  return caseId === "cantilever" ? divingBoardDiagram() : bridgeDiagram();
+}
+
+export function simplifiedCaptionFor(caseId) {
+  return caseId === "cantilever" ? "Think of it like a diving board" : "Think of it like a bridge";
+}

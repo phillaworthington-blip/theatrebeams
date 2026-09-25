@@ -31,7 +31,16 @@
           <option value="cantilever">Cantilever, evenly distributed load (L/360)</option>
         </select>
       </label>
-      <div id="case-diagram" class="case-diagram" aria-hidden="true"></div>
+      <div class="diagram-row">
+        <div class="diagram-col">
+          <div id="case-diagram" class="case-diagram" aria-hidden="true"></div>
+          <p class="diagram-caption">Engineering diagram</p>
+        </div>
+        <div class="diagram-col">
+          <div id="case-diagram-simple" class="case-diagram" aria-hidden="true"></div>
+          <p class="diagram-caption" id="case-diagram-caption"></p>
+        </div>
+      </div>
     </fieldset>
 
     <fieldset>

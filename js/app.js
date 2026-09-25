@@ -2,7 +2,7 @@ import { MATERIALS, LOAD_CASES, pliFromFloorLoad, solveRequiredInertia } from ".
 import { recommendSizes } from "./lumber.js";
 import { STEEL_SHAPES, ALUMINUM_SHAPES, recommendMetalSizes } from "./metalShapes.js";
 import { isPro, setPro } from "./pro.js";
-import { diagramFor } from "./diagrams.js";
+import { diagramFor, simplifiedDiagramFor, simplifiedCaptionFor } from "./diagrams.js";
 
 const form = document.getElementById("beam-form");
 const materialField = document.getElementById("material-field");
@@ -14,9 +14,13 @@ const proToggle = document.getElementById("pro-dev-toggle");
 const proBadgeArea = document.getElementById("pro-status");
 const caseSelect = document.getElementById("load-case");
 const caseDiagram = document.getElementById("case-diagram");
+const caseDiagramSimple = document.getElementById("case-diagram-simple");
+const caseDiagramCaption = document.getElementById("case-diagram-caption");
 
 function renderCaseDiagram() {
   caseDiagram.innerHTML = diagramFor(caseSelect.value);
+  caseDiagramSimple.innerHTML = simplifiedDiagramFor(caseSelect.value);
+  caseDiagramCaption.textContent = simplifiedCaptionFor(caseSelect.value);
 }
 
 caseSelect.addEventListener("change", renderCaseDiagram);
