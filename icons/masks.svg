@@ -1,47 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 474 220">
 
-  <!-- happy dog -->
-  <g transform="translate(20,25) scale(0.8) rotate(22.5,100,102)">
-    <path d="M52,64 Q38,32 52,10 Q72,28 74,60 Z" fill="#00356B" />
-    <path d="M148,64 Q162,32 148,10 Q128,28 126,60 Z" fill="#00356B" />
-    <ellipse cx="100" cy="102" rx="66" ry="60" fill="#00356B" />
-    <ellipse cx="100" cy="132" rx="46" ry="34" fill="#f4f5f7" />
-
-    <!-- raised, happy brows -->
-    <path d="M64,80 Q100,64 136,80" fill="none" stroke="#00253f" stroke-width="4" stroke-linecap="round" />
-
-    <circle cx="62" cy="126" r="8" fill="#f2b8c0" opacity="0.6" />
-    <circle cx="138" cy="126" r="8" fill="#f2b8c0" opacity="0.6" />
-
-    <circle cx="74" cy="92" r="9" fill="#1c1e21" />
-    <circle cx="126" cy="92" r="9" fill="#1c1e21" />
-    <circle cx="77" cy="89" r="2.5" fill="#f4f5f7" />
-    <circle cx="129" cy="89" r="2.5" fill="#f4f5f7" />
-
-    <ellipse cx="100" cy="118" rx="14" ry="10" fill="#1c1e21" />
-    <ellipse cx="95" cy="116" rx="2.5" ry="3" fill="#4a4d52" />
-    <ellipse cx="105" cy="116" rx="2.5" ry="3" fill="#4a4d52" />
-
-    <!-- big open smile -->
-    <path d="M70,132 Q100,162 130,132" fill="none" stroke="#1c1e21" stroke-width="3.5" stroke-linecap="round" />
-    <path d="M88,144 Q100,156 112,144 Z" fill="#e0656f" />
-
-    <path d="M52,150 Q100,172 148,150 L148,160 Q100,182 52,160 Z" fill="#00356B" />
-    <circle cx="100" cy="168" r="6" fill="#f4c542" stroke="#00253f" stroke-width="1.5" />
-  </g>
-
-  <!-- I-beam cross-section, one filleted outline -->
-  <path
-    d="M192,56 L192,44 Q192,40 196,40 L278,40 Q282,40 282,44 L282,56 Q282,60 278,60
-       L253,60 Q249,60 249,64 L249,156 Q249,160 253,160 L278,160 Q282,160 282,164
-       L282,176 Q282,180 278,180 L196,180 Q192,180 192,176 L192,164 Q192,160 196,160
-       L221,160 Q225,160 225,156 L225,64 Q225,60 221,60 L196,60 Q192,60 192,56 Z"
-    fill="#5c7a99" stroke="#2f4f6b" stroke-width="3" stroke-linejoin="round" />
-
   <!-- sad dog -->
-  <g transform="translate(294,25) scale(0.8) rotate(-22.5,100,102)">
-    <path d="M46,70 C20,80 14,120 34,148 C46,132 54,110 60,88 Z" fill="#00356B" />
-    <path d="M154,70 C180,80 186,120 166,148 C154,132 146,110 140,88 Z" fill="#00356B" />
+  <g transform="translate(20,25) scale(0.8) rotate(-22.5,100,102)">
+    <path d="M46,58 Q20,65 18,95 Q38,90 58,60 Z" fill="#00356B" />
+    <path d="M154,58 Q180,65 182,95 Q162,90 142,60 Z" fill="#00356B" />
     <ellipse cx="100" cy="102" rx="66" ry="60" fill="#00356B" />
     <ellipse cx="100" cy="132" rx="46" ry="34" fill="#f4f5f7" />
 
@@ -63,6 +25,44 @@
     <path d="M100,130 L100,138" fill="none" stroke="#1c1e21" stroke-width="3" stroke-linecap="round" />
     <path d="M100,138 Q80,140 70,158" fill="none" stroke="#1c1e21" stroke-width="3" stroke-linecap="round" />
     <path d="M100,138 Q120,140 130,158" fill="none" stroke="#1c1e21" stroke-width="3" stroke-linecap="round" />
+
+    <path d="M52,150 Q100,172 148,150 L148,160 Q100,182 52,160 Z" fill="#00356B" />
+    <circle cx="100" cy="168" r="6" fill="#f4c542" stroke="#00253f" stroke-width="1.5" />
+  </g>
+
+  <!-- I-beam cross-section, one filleted outline -->
+  <path
+    d="M192,56 L192,44 Q192,40 196,40 L278,40 Q282,40 282,44 L282,56 Q282,60 278,60
+       L253,60 Q249,60 249,64 L249,156 Q249,160 253,160 L278,160 Q282,160 282,164
+       L282,176 Q282,180 278,180 L196,180 Q192,180 192,176 L192,164 Q192,160 196,160
+       L221,160 Q225,160 225,156 L225,64 Q225,60 221,60 L196,60 Q192,60 192,56 Z"
+    fill="#5c7a99" stroke="#2f4f6b" stroke-width="3" stroke-linejoin="round" />
+
+  <!-- happy dog -->
+  <g transform="translate(294,25) scale(0.8) rotate(22.5,100,102)">
+    <path d="M46,58 Q20,65 18,95 Q38,90 58,60 Z" fill="#00356B" />
+    <path d="M154,58 Q180,65 182,95 Q162,90 142,60 Z" fill="#00356B" />
+    <ellipse cx="100" cy="102" rx="66" ry="60" fill="#00356B" />
+    <ellipse cx="100" cy="132" rx="46" ry="34" fill="#f4f5f7" />
+
+    <!-- raised, happy brows -->
+    <path d="M64,80 Q100,64 136,80" fill="none" stroke="#00253f" stroke-width="4" stroke-linecap="round" />
+
+    <circle cx="62" cy="126" r="8" fill="#f2b8c0" opacity="0.6" />
+    <circle cx="138" cy="126" r="8" fill="#f2b8c0" opacity="0.6" />
+
+    <circle cx="74" cy="92" r="9" fill="#1c1e21" />
+    <circle cx="126" cy="92" r="9" fill="#1c1e21" />
+    <circle cx="77" cy="89" r="2.5" fill="#f4f5f7" />
+    <circle cx="129" cy="89" r="2.5" fill="#f4f5f7" />
+
+    <ellipse cx="100" cy="118" rx="14" ry="10" fill="#1c1e21" />
+    <ellipse cx="95" cy="116" rx="2.5" ry="3" fill="#4a4d52" />
+    <ellipse cx="105" cy="116" rx="2.5" ry="3" fill="#4a4d52" />
+
+    <!-- big open smile -->
+    <path d="M70,132 Q100,162 130,132" fill="none" stroke="#1c1e21" stroke-width="3.5" stroke-linecap="round" />
+    <path d="M88,144 Q100,156 112,144 Z" fill="#e0656f" />
 
     <path d="M52,150 Q100,172 148,150 L148,160 Q100,182 52,160 Z" fill="#00356B" />
     <circle cx="100" cy="168" r="6" fill="#f4c542" stroke="#00253f" stroke-width="1.5" />
