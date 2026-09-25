@@ -3,7 +3,8 @@
 
 export const MATERIALS = {
   pine: { id: "pine", label: "Pine", E: 1200000, tier: "free" },
-  poplar: { id: "poplar", label: "Poplar", E: 1580000, tier: "free" },
+  // poplar: { id: "poplar", label: "Poplar", E: 1580000, tier: "free" },
+  douglasFir: { id: "douglasFir", label: "Doug Fir No. 2", E: 1600000, tier: "free" },
   steel: { id: "steel", label: "Steel", E: 29000000, tier: "pro" },
   aluminum: { id: "aluminum", label: "Aluminum", E: 10100000, tier: "pro" },
 };
