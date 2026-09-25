@@ -122,6 +122,8 @@ legend {
 
 input[type="number"],
 select {
+  width: 100%;
+  min-width: 0;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid var(--border);
@@ -138,8 +140,9 @@ select {
 }
 
 .diagram-col {
-  flex: 1 1 160px;
-  min-width: 160px;
+  flex: 1 1 200px;
+  min-width: 200px;
+  max-width: 100%;
 }
 
 .case-diagram {
@@ -148,17 +151,17 @@ select {
   justify-content: center;
 }
 
+.case-diagram svg {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+
 .diagram-caption {
   margin: 4px 0 0;
   text-align: center;
   font-size: 0.8rem;
   color: var(--muted);
-}
-
-.case-diagram svg {
-  width: 100%;
-  max-width: 320px;
-  height: auto;
 }
 
 .material-field {
