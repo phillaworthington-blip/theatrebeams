@@ -1,4 +1,4 @@
-import { MATERIALS, LOAD_CASES, pliFromFloorLoad, solveRequiredInertia } from "./beamMath.js";
+import { MATERIALS, MATERIAL_CATEGORIES, LOAD_CASES, pliFromFloorLoad, solveRequiredInertia } from "./beamMath.js";
 import { recommendSizes } from "./lumber.js";
 import { STEEL_SHAPES, ALUMINUM_SHAPES, recommendMetalSizes } from "./metalShapes.js";
 import { isPro, setPro } from "./pro.js";
@@ -29,24 +29,45 @@ caseSelect.addEventListener("change", renderCaseDiagram);
 
 function renderMaterialOptions() {
   materialField.innerHTML = "";
-  Object.values(MATERIALS).forEach((material) => {
-    const locked = material.tier === "pro" && !isPro();
-    const label = document.createElement("label");
-    label.className = "material-option" + (locked ? " material-option--locked" : "");
+  const materials = Object.values(MATERIALS);
 
-    const input = document.createElement("input");
-    input.type = "radio";
-    input.name = "material";
-    input.value = material.id;
-    input.disabled = locked;
-    if (material.id === "pine") input.checked = true;
+  MATERIAL_CATEGORIES.forEach((category) => {
+    const materialsInCategory = materials.filter((material) => material.category === category.id);
+    if (materialsInCategory.length === 0) return;
 
-    const span = document.createElement("span");
-    span.textContent = material.label + (locked ? " (Pro)" : "");
+    const group = document.createElement("div");
+    group.className = "material-group";
 
-    label.appendChild(input);
-    label.appendChild(span);
-    materialField.appendChild(label);
+    const heading = document.createElement("p");
+    heading.className = "material-group-label";
+    heading.textContent = category.label;
+    group.appendChild(heading);
+
+    const options = document.createElement("div");
+    options.className = "material-group-options";
+
+    materialsInCategory.forEach((material) => {
+      const locked = material.tier === "pro" && !isPro();
+      const label = document.createElement("label");
+      label.className = "material-option" + (locked ? " material-option--locked" : "");
+
+      const input = document.createElement("input");
+      input.type = "radio";
+      input.name = "material";
+      input.value = material.id;
+      input.disabled = locked;
+      if (material.id === "pine") input.checked = true;
+
+      const span = document.createElement("span");
+      span.textContent = material.label + (locked ? " (Pro)" : "");
+
+      label.appendChild(input);
+      label.appendChild(span);
+      options.appendChild(label);
+    });
+
+    group.appendChild(options);
+    materialField.appendChild(group);
   });
 }
 

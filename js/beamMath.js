@@ -2,12 +2,17 @@
 // All lengths in inches, loads in pounds, E (modulus of elasticity) in psi.
 
 export const MATERIALS = {
-  pine: { id: "pine", label: "Pine", E: 1200000, tier: "free" },
-  // poplar: { id: "poplar", label: "Poplar", E: 1580000, tier: "free" },
-  douglasFir: { id: "douglasFir", label: "Doug Fir No. 2", E: 1600000, tier: "free" },
-  steel: { id: "steel", label: "Steel", E: 29000000, tier: "pro" },
-  aluminum: { id: "aluminum", label: "Aluminum", E: 10100000, tier: "pro" },
+  pine: { id: "pine", label: "Pine", category: "wood", E: 1200000, tier: "free" },
+  // poplar: { id: "poplar", label: "Poplar", category: "wood", E: 1580000, tier: "free" },
+  douglasFir: { id: "douglasFir", label: "Doug Fir No. 2", category: "wood", E: 1600000, tier: "free" },
+  steel: { id: "steel", label: "Steel", category: "metal", E: 29000000, tier: "pro" },
+  aluminum: { id: "aluminum", label: "Aluminum", category: "metal", E: 10100000, tier: "pro" },
 };
+
+export const MATERIAL_CATEGORIES = [
+  { id: "wood", label: "Wood" },
+  { id: "metal", label: "Metal" },
+];
 
 export const LOAD_CASES = {
   simple: {

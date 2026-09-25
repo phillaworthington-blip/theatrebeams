@@ -166,6 +166,27 @@ select {
 
 .material-field {
   display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.material-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.material-group-label {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.material-group-options {
+  display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
